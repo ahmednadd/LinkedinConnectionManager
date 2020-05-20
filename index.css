@@ -1,0 +1,202 @@
+body {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0;
+}
+
+.container {
+  min-width: 300px;
+  width: 100%;
+}
+.main-heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-heading {
+  margin: 20px;
+  font-size: 16px;
+}
+
+.main-heading-container img {
+  margin-left: 15px;
+  width: 25px;
+  height: 25px;
+}
+
+.main-sub {
+  background-color: #0077b5;
+  color: #fff;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+.main-sub-heading {
+  font-size: 12px;
+  text-align: center;
+}
+
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 0.6em;
+  color: #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: flex;
+  align-self: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  margin-top: 10px;
+  padding: 5px 15px 5px 15px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.first {
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.first:hover {
+  box-shadow: 0 0 40px 40px rgb(27, 159, 230) inset;
+}
+
+.third {
+  background-color: #fff;
+  border: 1px solid #0077b5;
+  color: #0077b5;
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.third:hover {
+  background-color: #0077b5;
+  border: 1px solid rgb(0, 82, 126);
+  color: #fff;
+}
+.third:active {
+  background-color: #0077b5;
+  border: 1px solid rgb(0, 82, 126);
+  color: #fff;
+}
+.third:focus {
+  background-color: #0077b5;
+  border: 1px solid rgb(0, 82, 126);
+  color: #fff;
+}
+
+.form {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  font-size: 16px;
+  color: slategray;
+  margin-bottom: 5px;
+  text-align: left;
+  width: 100%;
+  padding-left: 22px;
+}
+
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #0077b5;
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #0077b5;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+select {
+  flex: 1;
+  padding: 0 0.5em;
+  color: #fff;
+  cursor: pointer;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #0077b5;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  -o-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: #fff;
+}
+
+input {
+  display: flex;
+  width: 16.4em;
+  height: 2.2em;
+  line-height: 3;
+  padding: 0 0.5em;
+  border-radius: 0.25em;
+  -webkit-appearance: none;
+  border-style:solid;
+  border: 2px solid gray;
+}
+input:hover {
+  border: 2px solid #0077b5;
+}
+input:focus {
+  border: 2px solid #0077b5;
+}
+input:active {
+  border: 2px solid #0077b5;
+}
